@@ -1,0 +1,88 @@
+{
+  "format_version": 1,
+  "scope": "Fixed PaddleOCR-VL-1.6 applied experimentally to five filtered versions of two frozen private crops. 2,212 reference characters total. This differs from production, where OCR reads unfiltered corrected geometry.",
+  "private_inputs_included": false,
+  "records": [
+    {
+      "case": "private-doc-a",
+      "method": "input",
+      "errors": 22,
+      "reference_chars": 1137,
+      "cer_percent": 1.935,
+      "ocr_seconds": 21.56
+    },
+    {
+      "case": "private-doc-a",
+      "method": "legacy_clean",
+      "errors": 23,
+      "reference_chars": 1137,
+      "cer_percent": 2.023,
+      "ocr_seconds": 21.31
+    },
+    {
+      "case": "private-doc-a",
+      "method": "paper_gray",
+      "errors": 22,
+      "reference_chars": 1137,
+      "cer_percent": 1.935,
+      "ocr_seconds": 21.41
+    },
+    {
+      "case": "private-doc-a",
+      "method": "docres_appearance",
+      "errors": 22,
+      "reference_chars": 1137,
+      "cer_percent": 1.935,
+      "ocr_seconds": 21.77
+    },
+    {
+      "case": "private-doc-a",
+      "method": "PhaSR-Ambient6K-lightfield",
+      "errors": 21,
+      "reference_chars": 1137,
+      "cer_percent": 1.847,
+      "ocr_seconds": 21.73
+    },
+    {
+      "case": "private-doc-b",
+      "method": "input",
+      "errors": 25,
+      "reference_chars": 1075,
+      "cer_percent": 2.326,
+      "ocr_seconds": 31.07
+    },
+    {
+      "case": "private-doc-b",
+      "method": "legacy_clean",
+      "errors": 25,
+      "reference_chars": 1075,
+      "cer_percent": 2.326,
+      "ocr_seconds": 30.37
+    },
+    {
+      "case": "private-doc-b",
+      "method": "paper_gray",
+      "errors": 27,
+      "reference_chars": 1075,
+      "cer_percent": 2.512,
+      "ocr_seconds": 30.77
+    },
+    {
+      "case": "private-doc-b",
+      "method": "docres_appearance",
+      "errors": 23,
+      "reference_chars": 1075,
+      "cer_percent": 2.14,
+      "ocr_seconds": 31.23
+    },
+    {
+      "case": "private-doc-b",
+      "method": "PhaSR-Ambient6K-lightfield",
+      "errors": 26,
+      "reference_chars": 1075,
+      "cer_percent": 2.419,
+      "ocr_seconds": 31.33
+    }
+  ],
+  "normalization": "NFC/casefold, alphanumeric, accents retained; reference-global / prediction-local alignment"
+}

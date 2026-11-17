@@ -1,0 +1,26 @@
+{
+  "format_version": 1,
+  "scope": "Six fixed manually transcribed readable blocks of one private photo. Inputs/layout pipelines differ; not an end-to-end system ranking.",
+  "private_inputs_included": false,
+  "records": [
+    {
+      "model": "PaddleOCR-VL-1.6",
+      "reference_characters": 1137,
+      "errors": 28,
+      "cer_percent": 2.463
+    },
+    {
+      "model": "MonkeyOCRv2-B-Parsing",
+      "reference_characters": 1137,
+      "errors": 7,
+      "cer_percent": 0.616
+    },
+    {
+      "model": "Chandra-OCR-2",
+      "reference_characters": 1137,
+      "errors": 4,
+      "cer_percent": 0.352
+    }
+  ],
+  "normalization": "NFC, casefold, letters/digits only, accents retained; punctuation/spacing excluded"
+}

@@ -1,0 +1,3 @@
+case,seconds,width,height,provider,threads,neural_input
+private-doc-a,0.8587338150246069,1300,1400,CPUExecutionProvider,4,512x512 FP32
+private-doc-b,0.8233107359847054,1319,1868,CPUExecutionProvider,4,512x512 FP32

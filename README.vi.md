@@ -2,6 +2,8 @@
 
 Ứng dụng quét tài liệu cho iPhone, xử lý ảnh và OCR trên máy chủ của bạn qua Tailscale.
 
+[Kết quả thí nghiệm model, phương pháp đo và ảnh kiểm thử tổng hợp](experiments/README.md).
+
 ## Chức năng
 
 - Chụp / nhập nhiều trang, tự gợi ý góc giấy, chỉnh góc và xoay trang.

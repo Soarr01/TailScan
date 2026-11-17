@@ -1,0 +1,4 @@
+model,reference_characters,errors,cer_percent
+PaddleOCR-VL-1.6,1137,28,2.463
+MonkeyOCRv2-B-Parsing,1137,7,0.616
+Chandra-OCR-2,1137,4,0.352

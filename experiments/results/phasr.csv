@@ -1,0 +1,11 @@
+model,case,restore_seconds,depth_seconds,peak_torch_allocated_mib,neural_height,neural_width,precision,device
+PhaSR-Ambient6K,private-doc-b,4.345,1.345,2626.2,362,512,FP16 autocast; official script uses BF16,RTX 3080 20 GB
+PhaSR-Ambient6K,synthetic-0,0.208,0.301,2626.5,369,512,FP16 autocast; official script uses BF16,RTX 3080 20 GB
+PhaSR-Ambient6K,synthetic-1,0.189,0.261,2626.5,369,512,FP16 autocast; official script uses BF16,RTX 3080 20 GB
+PhaSR-Ambient6K,synthetic-2,0.19,0.263,2626.5,369,512,FP16 autocast; official script uses BF16,RTX 3080 20 GB
+PhaSR-Ambient6K,private-doc-a,3.359,0.234,3084.0,475,512,FP16 autocast; official script uses BF16,RTX 3080 20 GB
+PhaSR-ISTDp,private-doc-b,3.359,1.345,2781.7,362,512,FP16 autocast; official script uses BF16,RTX 3080 20 GB
+PhaSR-ISTDp,synthetic-0,0.222,0.301,2781.6,369,512,FP16 autocast; official script uses BF16,RTX 3080 20 GB
+PhaSR-ISTDp,synthetic-1,0.221,0.261,2781.6,369,512,FP16 autocast; official script uses BF16,RTX 3080 20 GB
+PhaSR-ISTDp,synthetic-2,0.222,0.263,2781.6,369,512,FP16 autocast; official script uses BF16,RTX 3080 20 GB
+PhaSR-ISTDp,private-doc-a,3.405,0.234,3291.5,475,512,FP16 autocast; official script uses BF16,RTX 3080 20 GB

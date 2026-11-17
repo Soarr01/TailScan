@@ -1,0 +1,11 @@
+case,method,errors,reference_chars,cer_percent,ocr_seconds
+private-doc-a,input,22,1137,1.935,21.56
+private-doc-a,legacy_clean,23,1137,2.023,21.31
+private-doc-a,paper_gray,22,1137,1.935,21.41
+private-doc-a,docres_appearance,22,1137,1.935,21.77
+private-doc-a,PhaSR-Ambient6K-lightfield,21,1137,1.847,21.73
+private-doc-b,input,25,1075,2.326,31.07
+private-doc-b,legacy_clean,25,1075,2.326,30.37
+private-doc-b,paper_gray,27,1075,2.512,30.77
+private-doc-b,docres_appearance,23,1075,2.14,31.23
+private-doc-b,PhaSR-Ambient6K-lightfield,26,1075,2.419,31.33

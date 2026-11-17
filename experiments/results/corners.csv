@@ -1,0 +1,6 @@
+method,synthetic_mean_iou,detected,cases
+classic,0.3276892354300161,4,12
+docaligner-lcnet,0.5670271909235597,7,12
+docaligner-fastvit,0.968916255096675,12,12
+docquadnet256,0.9563810066473281,12,12
+docquadnet256-safe,0.9563809873330267,12,12

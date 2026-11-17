@@ -16,7 +16,7 @@ for file in files:
     rel=file.relative_to(ROOT).as_posix()
     if file.suffix.lower() in {'.ipa','.onnx','.ort','.safetensors','.pkl','.pth','.pdf','.jpg','.jpeg','.heic','.ttf'}:findings.append((rel,'non-source asset'))
     if file.name=='.env' or file.name=='worker.json' or any(s in file.relative_to(ROOT).parts for s in ['test-output','data','library']):findings.append((rel,'private runtime data'))
-    if file.suffix.lower() not in {'.py','.md','.txt','.swift','.html','.js','.css','.yml','.yaml','.json','.plist','.sh'}:continue
+    if file.suffix.lower() not in {'.py','.md','.txt','.swift','.html','.js','.css','.yml','.yaml','.json','.plist','.sh','.csv'}:continue
     text=file.read_text(encoding='utf-8')
     for label,pattern in patterns.items():
         if pattern.search(text):findings.append((rel,label))

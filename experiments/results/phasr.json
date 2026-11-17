@@ -1,0 +1,117 @@
+{
+  "format_version": 1,
+  "scope": "PhaSR Ambient6K and ISTD+; DINOv2-L + DepthAnythingV2-L, FP16 adaptation, max edge 512, no TTA, staged depth computation. First shapes can be slower; not measured on the RTX 2080 Ti.",
+  "private_inputs_included": false,
+  "records": [
+    {
+      "model": "PhaSR-Ambient6K",
+      "case": "private-doc-b",
+      "restore_seconds": 4.345,
+      "depth_seconds": 1.345,
+      "peak_torch_allocated_mib": 2626.2,
+      "neural_height": 362,
+      "neural_width": 512,
+      "precision": "FP16 autocast; official script uses BF16",
+      "device": "RTX 3080 20 GB"
+    },
+    {
+      "model": "PhaSR-Ambient6K",
+      "case": "synthetic-0",
+      "restore_seconds": 0.208,
+      "depth_seconds": 0.301,
+      "peak_torch_allocated_mib": 2626.5,
+      "neural_height": 369,
+      "neural_width": 512,
+      "precision": "FP16 autocast; official script uses BF16",
+      "device": "RTX 3080 20 GB"
+    },
+    {
+      "model": "PhaSR-Ambient6K",
+      "case": "synthetic-1",
+      "restore_seconds": 0.189,
+      "depth_seconds": 0.261,
+      "peak_torch_allocated_mib": 2626.5,
+      "neural_height": 369,
+      "neural_width": 512,
+      "precision": "FP16 autocast; official script uses BF16",
+      "device": "RTX 3080 20 GB"
+    },
+    {
+      "model": "PhaSR-Ambient6K",
+      "case": "synthetic-2",
+      "restore_seconds": 0.19,
+      "depth_seconds": 0.263,
+      "peak_torch_allocated_mib": 2626.5,
+      "neural_height": 369,
+      "neural_width": 512,
+      "precision": "FP16 autocast; official script uses BF16",
+      "device": "RTX 3080 20 GB"
+    },
+    {
+      "model": "PhaSR-Ambient6K",
+      "case": "private-doc-a",
+      "restore_seconds": 3.359,
+      "depth_seconds": 0.234,
+      "peak_torch_allocated_mib": 3084.0,
+      "neural_height": 475,
+      "neural_width": 512,
+      "precision": "FP16 autocast; official script uses BF16",
+      "device": "RTX 3080 20 GB"
+    },
+    {
+      "model": "PhaSR-ISTDp",
+      "case": "private-doc-b",
+      "restore_seconds": 3.359,
+      "depth_seconds": 1.345,
+      "peak_torch_allocated_mib": 2781.7,
+      "neural_height": 362,
+      "neural_width": 512,
+      "precision": "FP16 autocast; official script uses BF16",
+      "device": "RTX 3080 20 GB"
+    },
+    {
+      "model": "PhaSR-ISTDp",
+      "case": "synthetic-0",
+      "restore_seconds": 0.222,
+      "depth_seconds": 0.301,
+      "peak_torch_allocated_mib": 2781.6,
+      "neural_height": 369,
+      "neural_width": 512,
+      "precision": "FP16 autocast; official script uses BF16",
+      "device": "RTX 3080 20 GB"
+    },
+    {
+      "model": "PhaSR-ISTDp",
+      "case": "synthetic-1",
+      "restore_seconds": 0.221,
+      "depth_seconds": 0.261,
+      "peak_torch_allocated_mib": 2781.6,
+      "neural_height": 369,
+      "neural_width": 512,
+      "precision": "FP16 autocast; official script uses BF16",
+      "device": "RTX 3080 20 GB"
+    },
+    {
+      "model": "PhaSR-ISTDp",
+      "case": "synthetic-2",
+      "restore_seconds": 0.222,
+      "depth_seconds": 0.263,
+      "peak_torch_allocated_mib": 2781.6,
+      "neural_height": 369,
+      "neural_width": 512,
+      "precision": "FP16 autocast; official script uses BF16",
+      "device": "RTX 3080 20 GB"
+    },
+    {
+      "model": "PhaSR-ISTDp",
+      "case": "private-doc-a",
+      "restore_seconds": 3.405,
+      "depth_seconds": 0.234,
+      "peak_torch_allocated_mib": 3291.5,
+      "neural_height": 475,
+      "neural_width": 512,
+      "precision": "FP16 autocast; official script uses BF16",
+      "device": "RTX 3080 20 GB"
+    }
+  ]
+}

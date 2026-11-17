@@ -4,6 +4,8 @@
 
 [Tiếng Việt](README.vi.md) · [Self-hosting](docs/SELF_HOSTING.md) · [iPhone build](docs/IOS.md) · [Model credits](NOTICE.md)
 
+[Development experiments: model comparisons, measurements and synthetic examples](experiments/README.md)
+
 TailScan combines an iOS client with a browser interface and a private Python API.
 Connect your iPhone to your server through Tailscale, scan documents, and save a
 searchable PDF. No Apple ID or signing certificate is needed in the build service;

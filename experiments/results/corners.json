@@ -1,0 +1,37 @@
+{
+  "format_version": 1,
+  "scope": "Twelve generated perspective/lighting/occlusion cases from one synthetic document, seed 2411. The earlier incorrect-preprocessing trial is excluded. Private-photo coordinates and outlines are not released.",
+  "private_inputs_included": false,
+  "records": [
+    {
+      "method": "classic",
+      "synthetic_mean_iou": 0.3276892354300161,
+      "detected": 4,
+      "cases": 12
+    },
+    {
+      "method": "docaligner-lcnet",
+      "synthetic_mean_iou": 0.5670271909235597,
+      "detected": 7,
+      "cases": 12
+    },
+    {
+      "method": "docaligner-fastvit",
+      "synthetic_mean_iou": 0.968916255096675,
+      "detected": 12,
+      "cases": 12
+    },
+    {
+      "method": "docquadnet256",
+      "synthetic_mean_iou": 0.9563810066473281,
+      "detected": 12,
+      "cases": 12
+    },
+    {
+      "method": "docquadnet256-safe",
+      "synthetic_mean_iou": 0.9563809873330267,
+      "detected": 12,
+      "cases": 12
+    }
+  ]
+}

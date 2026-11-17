@@ -1,0 +1,49 @@
+{
+  "format_version": 1,
+  "scope": "Seven fixed references from a second private photo. Region, full-page and focused-crop inputs are distinct conditions.",
+  "private_inputs_included": false,
+  "records": [
+    {
+      "model": "Chandra-OCR-2",
+      "reference_characters": 1075,
+      "strict_errors": 19,
+      "strict_cer_percent": 1.767,
+      "aligned_errors": 19,
+      "aligned_cer_percent": 1.767
+    },
+    {
+      "model": "SenOCR-Vi",
+      "reference_characters": 1075,
+      "strict_errors": 17,
+      "strict_cer_percent": 1.581,
+      "aligned_errors": 17,
+      "aligned_cer_percent": 1.581
+    },
+    {
+      "model": "Qwen3.5-9B-int8",
+      "reference_characters": 1075,
+      "strict_errors": 101,
+      "strict_cer_percent": 9.395,
+      "aligned_errors": 7,
+      "aligned_cer_percent": 0.651
+    },
+    {
+      "model": "Qwen3.5-9B-int8 (full page)",
+      "reference_characters": 1075,
+      "strict_errors": null,
+      "strict_cer_percent": null,
+      "aligned_errors": 33,
+      "aligned_cer_percent": 3.07
+    },
+    {
+      "model": "Qwen3.5-9B-int8 (focused page)",
+      "reference_characters": 1075,
+      "strict_errors": null,
+      "strict_cer_percent": null,
+      "aligned_errors": 8,
+      "aligned_cer_percent": 0.744
+    }
+  ],
+  "normalization": "NFC/casefold, alphanumeric, accents retained",
+  "alignment": "Global reference / local prediction: free leading/trailing predicted context, all internal edits and missing reference characters count"
+}

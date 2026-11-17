@@ -1,0 +1,6 @@
+model,reference_characters,strict_errors,strict_cer_percent,aligned_errors,aligned_cer_percent
+Chandra-OCR-2,1075,19,1.767,19,1.767
+SenOCR-Vi,1075,17,1.581,17,1.581
+Qwen3.5-9B-int8,1075,101,9.395,7,0.651
+Qwen3.5-9B-int8 (full page),1075,,,33,3.07
+Qwen3.5-9B-int8 (focused page),1075,,,8,0.744

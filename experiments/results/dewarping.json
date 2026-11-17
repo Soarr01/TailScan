@@ -1,0 +1,79 @@
+{
+  "format_version": 1,
+  "scope": "Two full private photos and their quadrilateral crops. Hardware and tested grid resolutions differ. Fold fractions are not a common per-pixel quality metric. Timings include first-shape/warmup effects.",
+  "private_inputs_included": false,
+  "records": [
+    {
+      "model": "UVDoc",
+      "case": "private-doc-a.full",
+      "seconds": 0.31329630804248154,
+      "fold_fraction": 0.0,
+      "peak_torch_allocated_mib": 66.12548828125,
+      "grid": "45x31",
+      "device": "RTX 2080 Ti 11 GB"
+    },
+    {
+      "model": "UVDoc",
+      "case": "private-doc-a.crop",
+      "seconds": 0.07113293500151485,
+      "fold_fraction": 0.0,
+      "peak_torch_allocated_mib": 66.12548828125,
+      "grid": "45x31",
+      "device": "RTX 2080 Ti 11 GB"
+    },
+    {
+      "model": "UVDoc",
+      "case": "private-doc-b.full",
+      "seconds": 0.1551188009325415,
+      "fold_fraction": 0.0,
+      "peak_torch_allocated_mib": 66.12548828125,
+      "grid": "45x31",
+      "device": "RTX 2080 Ti 11 GB"
+    },
+    {
+      "model": "UVDoc",
+      "case": "private-doc-b.crop",
+      "seconds": 0.14570926094893366,
+      "fold_fraction": 0.0,
+      "peak_torch_allocated_mib": 66.12548828125,
+      "grid": "45x31",
+      "device": "RTX 2080 Ti 11 GB"
+    },
+    {
+      "model": "DocRes + MBD",
+      "case": "private-doc-b-full",
+      "seconds": 4.623170955106616,
+      "fold_fraction": 0.0,
+      "peak_torch_allocated_mib": 636.59423828125,
+      "grid": "256x256 after smoothing",
+      "device": "RTX 3080 20 GB"
+    },
+    {
+      "model": "DocRes + MBD",
+      "case": "private-doc-a-crop",
+      "seconds": 0.2904064648319036,
+      "fold_fraction": 0.0019223375624759708,
+      "peak_torch_allocated_mib": 636.59423828125,
+      "grid": "256x256 after smoothing",
+      "device": "RTX 3080 20 GB"
+    },
+    {
+      "model": "DocRes + MBD",
+      "case": "private-doc-b-crop",
+      "seconds": 0.4812013099435717,
+      "fold_fraction": 0.03586312956555171,
+      "peak_torch_allocated_mib": 636.59423828125,
+      "grid": "256x256 after smoothing",
+      "device": "RTX 3080 20 GB"
+    },
+    {
+      "model": "DocRes + MBD",
+      "case": "private-doc-a-full",
+      "seconds": 0.35391881014220417,
+      "fold_fraction": 0.0,
+      "peak_torch_allocated_mib": 636.59423828125,
+      "grid": "256x256 after smoothing",
+      "device": "RTX 3080 20 GB"
+    }
+  ]
+}

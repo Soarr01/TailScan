@@ -1,0 +1,244 @@
+{
+  "format_version": 1,
+  "scope": "Three multiplicative lighting fields on ONE generated color document, plus two fixed private-photo crops. DocRes: FP16 on RTX 2080 Ti, 512-square inference and original-resolution gain reconstruction. CPU and GPU times include transfer/postprocessing. First calls can include warmup. Color PSNR penalizes conversion to grayscale.",
+  "private_inputs_included": false,
+  "records": [
+    {
+      "case": "synthetic-0",
+      "method": "legacy_clean",
+      "seconds": 0.056,
+      "psnr": 25.568907142562306,
+      "ssim": 0.989914219760386,
+      "dark_stroke_recall": 0.9876862928557107,
+      "background_gray_std": 5.242495278145194
+    },
+    {
+      "case": "synthetic-0",
+      "method": "paper_color",
+      "seconds": 0.101,
+      "psnr": 42.62578932195527,
+      "ssim": 0.9968126123285997,
+      "dark_stroke_recall": 1.0,
+      "background_gray_std": 3.3458739472745287
+    },
+    {
+      "case": "synthetic-0",
+      "method": "paper_gray",
+      "seconds": 0.084,
+      "psnr": 29.926996705299622,
+      "ssim": 0.9936611251167524,
+      "dark_stroke_recall": 1.0,
+      "background_gray_std": 3.3458739472745287
+    },
+    {
+      "case": "synthetic-0",
+      "method": "docres_appearance",
+      "seconds": 1.279,
+      "psnr": 29.781119887678578,
+      "ssim": 0.9820307624372347,
+      "dark_stroke_recall": 0.999983292120564,
+      "background_gray_std": 6.2072998023083015,
+      "peak_torch_allocated_mib": 1173.7
+    },
+    {
+      "case": "synthetic-0",
+      "method": "docres_deshadow",
+      "seconds": 0.237,
+      "psnr": 20.98896761491733,
+      "ssim": 0.9819742103237167,
+      "dark_stroke_recall": 0.9921807124239791,
+      "background_gray_std": 6.768733223897404,
+      "peak_torch_allocated_mib": 1173.2
+    },
+    {
+      "case": "synthetic-0",
+      "method": "docres_lightfield",
+      "seconds": 0.218,
+      "psnr": 28.896459530626416,
+      "ssim": 0.9778610450968164,
+      "dark_stroke_recall": 1.0,
+      "background_gray_std": 6.7717441511472,
+      "peak_torch_allocated_mib": 1173.2
+    },
+    {
+      "case": "synthetic-1",
+      "method": "legacy_clean",
+      "seconds": 0.086,
+      "psnr": 25.644134897400694,
+      "ssim": 0.9909610426516949,
+      "dark_stroke_recall": 0.9874189667847357,
+      "background_gray_std": 5.057925071538187
+    },
+    {
+      "case": "synthetic-1",
+      "method": "paper_color",
+      "seconds": 0.077,
+      "psnr": 44.59817650978014,
+      "ssim": 0.9981390421609725,
+      "dark_stroke_recall": 1.0,
+      "background_gray_std": 3.173960047993087
+    },
+    {
+      "case": "synthetic-1",
+      "method": "paper_gray",
+      "seconds": 0.083,
+      "psnr": 30.013462657007537,
+      "ssim": 0.9949429091464147,
+      "dark_stroke_recall": 1.0,
+      "background_gray_std": 3.173960047993087
+    },
+    {
+      "case": "synthetic-1",
+      "method": "docres_appearance",
+      "seconds": 0.216,
+      "psnr": 28.888455262019015,
+      "ssim": 0.9830613711830267,
+      "dark_stroke_recall": 1.0,
+      "background_gray_std": 6.53941175264313,
+      "peak_torch_allocated_mib": 1173.2
+    },
+    {
+      "case": "synthetic-1",
+      "method": "docres_deshadow",
+      "seconds": 0.21,
+      "psnr": 28.6018687842091,
+      "ssim": 0.9892798834912492,
+      "dark_stroke_recall": 0.9958731537793223,
+      "background_gray_std": 3.0741176116484135,
+      "peak_torch_allocated_mib": 1173.2
+    },
+    {
+      "case": "synthetic-1",
+      "method": "docres_lightfield",
+      "seconds": 0.228,
+      "psnr": 28.051541836704143,
+      "ssim": 0.9743323174721948,
+      "dark_stroke_recall": 1.0,
+      "background_gray_std": 7.684593106346501,
+      "peak_torch_allocated_mib": 1173.2
+    },
+    {
+      "case": "synthetic-2",
+      "method": "legacy_clean",
+      "seconds": 0.083,
+      "psnr": 25.776338709295835,
+      "ssim": 0.9904525327456156,
+      "dark_stroke_recall": 0.9891398783666377,
+      "background_gray_std": 4.910701264321461
+    },
+    {
+      "case": "synthetic-2",
+      "method": "paper_color",
+      "seconds": 0.081,
+      "psnr": 44.14258263579111,
+      "ssim": 0.9952901436042284,
+      "dark_stroke_recall": 0.9997326739290249,
+      "background_gray_std": 3.2295776568126273
+    },
+    {
+      "case": "synthetic-2",
+      "method": "paper_gray",
+      "seconds": 0.083,
+      "psnr": 29.920491036919902,
+      "ssim": 0.9921048945567583,
+      "dark_stroke_recall": 0.9997326739290249,
+      "background_gray_std": 3.2295776568126273
+    },
+    {
+      "case": "synthetic-2",
+      "method": "docres_appearance",
+      "seconds": 0.219,
+      "psnr": 29.712858665129037,
+      "ssim": 0.9821289732609223,
+      "dark_stroke_recall": 0.999983292120564,
+      "background_gray_std": 6.0912036330476464,
+      "peak_torch_allocated_mib": 1173.2
+    },
+    {
+      "case": "synthetic-2",
+      "method": "docres_deshadow",
+      "seconds": 0.224,
+      "psnr": 25.82367848815169,
+      "ssim": 0.9882563499217389,
+      "dark_stroke_recall": 0.996224019247477,
+      "background_gray_std": 5.797676176931924,
+      "peak_torch_allocated_mib": 1173.2
+    },
+    {
+      "case": "synthetic-2",
+      "method": "docres_lightfield",
+      "seconds": 0.235,
+      "psnr": 29.081102772686585,
+      "ssim": 0.9807477248917097,
+      "dark_stroke_recall": 1.0,
+      "background_gray_std": 6.555597303482433,
+      "peak_torch_allocated_mib": 1173.2
+    },
+    {
+      "case": "private-doc-a",
+      "method": "legacy_clean",
+      "seconds": 0.102
+    },
+    {
+      "case": "private-doc-a",
+      "method": "paper_color",
+      "seconds": 0.283
+    },
+    {
+      "case": "private-doc-a",
+      "method": "paper_gray",
+      "seconds": 0.2
+    },
+    {
+      "case": "private-doc-a",
+      "method": "docres_appearance",
+      "seconds": 0.235,
+      "peak_torch_allocated_mib": 1173.2
+    },
+    {
+      "case": "private-doc-a",
+      "method": "docres_deshadow",
+      "seconds": 0.227,
+      "peak_torch_allocated_mib": 1173.2
+    },
+    {
+      "case": "private-doc-a",
+      "method": "docres_lightfield",
+      "seconds": 0.238,
+      "peak_torch_allocated_mib": 1173.2
+    },
+    {
+      "case": "private-doc-b",
+      "method": "legacy_clean",
+      "seconds": 0.108
+    },
+    {
+      "case": "private-doc-b",
+      "method": "paper_color",
+      "seconds": 0.23
+    },
+    {
+      "case": "private-doc-b",
+      "method": "paper_gray",
+      "seconds": 0.218
+    },
+    {
+      "case": "private-doc-b",
+      "method": "docres_appearance",
+      "seconds": 0.237,
+      "peak_torch_allocated_mib": 1173.2
+    },
+    {
+      "case": "private-doc-b",
+      "method": "docres_deshadow",
+      "seconds": 0.232,
+      "peak_torch_allocated_mib": 1173.2
+    },
+    {
+      "case": "private-doc-b",
+      "method": "docres_lightfield",
+      "seconds": 0.242,
+      "peak_torch_allocated_mib": 1173.2
+    }
+  ]
+}
