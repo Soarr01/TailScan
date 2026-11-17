@@ -1,0 +1,24 @@
+name: TailScan
+options:
+  bundleIdPrefix: org.tailscan
+  deploymentTarget:
+    iOS: '16.0'
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    TARGETED_DEVICE_FAMILY: '1,2'
+    CODE_SIGNING_ALLOWED: NO
+    MARKETING_VERSION: 1.2.0
+    CURRENT_PROJECT_VERSION: 3
+targets:
+  TailScan:
+    type: application
+    platform: iOS
+    sources: [TailScan]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.tailscan.scanner
+        INFOPLIST_FILE: TailScan/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    scheme:
+      gatherCoverageData: false

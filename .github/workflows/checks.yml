@@ -1,0 +1,20 @@
+name: Source checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install pytest numpy==2.2.6 opencv-python-headless==4.11.0.86 fastapi==0.162.5 uvicorn==0.54.0
+      - run: python -m compileall -q server scripts
+      - run: node --check server/web/app.js && node --check server/web/library.js && node --check server/web/instant-filters.js
+      - run: python scripts/audit_public.py
+      - run: python -m pytest -q tests

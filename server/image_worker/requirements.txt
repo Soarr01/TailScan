@@ -1,0 +1,7 @@
+# Install torch==2.2.1 separately from its CUDA wheel index; see deployment guide.
+numpy==1.26.3
+einops==0.8.1
+opencv-python-headless==4.11.0.86
+fastapi==0.162.5
+uvicorn==0.54.0
+pillow
