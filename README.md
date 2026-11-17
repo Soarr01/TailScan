@@ -41,6 +41,7 @@ flowchart LR
 The backend was tested on Linux with an NVIDIA RTX 2080 Ti (11 GB VRAM).
 The iPhone client requires iOS 16 or newer. The iPhone does not run the OCR models;
 your server must be available when processing new pages.
+The current user interface is in Vietnamese.
 
 ## Repository layout
 

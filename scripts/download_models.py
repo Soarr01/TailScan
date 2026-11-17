@@ -14,7 +14,8 @@ def sha256(path):
 
 def download(url,destination,expected=None):
     destination=Path(destination);destination.parent.mkdir(parents=True,exist_ok=True)
-    if destination.exists() and expected and sha256(destination)==expected:return
+    if destination.exists() and expected and sha256(destination)==expected:
+        MANIFEST.append({'url':url,'file':str(destination),'sha256':expected});return
     temporary=destination.with_name(destination.name+'.part')
     for attempt in range(3):
         try:
